@@ -65,5 +65,5 @@ glob("./icons/*/*.svg", (err, files) => {
   }
 
   // pack it up with spritezero and delete temp files
-  exec("spritezero dist/sr-sprite ./tmp/ && rm -rf ./tmp");
+  exec("spritezero dist/sr-sprite ./tmp/ && spritezero --retina dist/sr-sprite@2x ./tmp && rm -rf ./tmp");
 });
