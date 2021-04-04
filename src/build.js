@@ -11,6 +11,10 @@ const defaultConfig = {
   padding: 2,
 };
 
+// make sure temp and out dirs exist
+fs.mkdirSync(`./dist/`, { recursive: true });
+fs.mkdirSync(`./tmp/`, { recursive: true });
+
 glob("./icons/*/*.svg", (err, files) => {
   const configIcons = Object.keys(icons);
   const allIconIds = files.map((file) =>
@@ -54,16 +58,12 @@ glob("./icons/*/*.svg", (err, files) => {
         `viewBox="0 0 15 15"`,
         `viewBox="-${extraWidth} -${extraWidth} ${newWidth} ${newWidth}"`
       )
-      .replace(`width="15`, `width="${newWidth}px`)
-      .replace(`height="15`, `height="${newWidth}px`);
+      .replace(`width="15`, `width="${newWidth}`)
+      .replace(`height="15`, `height="${newWidth}`);
 
-    fs.mkdirSync(`./dist/icons/`, { recursive: true });
-    fs.writeFileSync(
-      `./dist/icons/${iconId.split("/")[1]}.svg`,
-      newIconData,
-      "utf8"
-    );
+    fs.writeFileSync(`./tmp/${iconId.split("/")[1]}.svg`, newIconData, "utf8");
   }
-});
 
-exec("spritezero dist/sr-sprite dist/icons");
+  // pack it up with spritezero and delete temp files
+  exec("spritezero dist/sr-sprite ./tmp/ && rm -rf ./tmp");
+});

@@ -1,9 +1,9 @@
 {
   "maki/airport-15": {
-    "iconColor": "green",
+    "iconColor": "#000",
     "borderSize": 1,
     "borderColor": "#000",
     "backgroundColor": "#fff",
-    "padding": 1
+    "padding": 2
   }
 }
