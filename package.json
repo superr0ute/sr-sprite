@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node ./src/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@beyondtracks/spritezero-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "glob": "^7.1.6"
   }
 }
