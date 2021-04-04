@@ -1,3 +1,4 @@
+const { exec } = require("child_process");
 const icons = require("./icon-config.json");
 const glob = require("glob");
 const fs = require("fs");
@@ -7,7 +8,7 @@ const defaultConfig = {
   borderSize: 1,
   borderColor: "#000",
   backgroundColor: "#fff",
-  padding: 1,
+  padding: 2,
 };
 
 glob("./icons/*/*.svg", (err, files) => {
@@ -39,7 +40,7 @@ glob("./icons/*/*.svg", (err, files) => {
         <circle
           cx="7.5"
           cy="7.5"
-          r="${7.5 + iconConfig.borderSize}"
+          r="${7.5 + iconConfig.padding}"
           fill="${iconConfig.backgroundColor}"
         />`;
 
@@ -53,10 +54,16 @@ glob("./icons/*/*.svg", (err, files) => {
         `viewBox="0 0 15 15"`,
         `viewBox="-${extraWidth} -${extraWidth} ${newWidth} ${newWidth}"`
       )
-      .replace(`width="15px"`, `width="${newWidth}px"`)
-      .replace(`height="15px"`, `height="${newWidth}px"`);
+      .replace(`width="15`, `width="${newWidth}px`)
+      .replace(`height="15`, `height="${newWidth}px`);
 
-    fs.mkdirSync(`./dist/${iconId.split("/")[0]}`, { recursive: true });
-    fs.writeFileSync(`./dist/${iconId}.svg`, newIconData, "utf8");
+    fs.mkdirSync(`./dist/icons/`, { recursive: true });
+    fs.writeFileSync(
+      `./dist/icons/${iconId.split("/")[1]}.svg`,
+      newIconData,
+      "utf8"
+    );
   }
 });
+
+exec("spritezero dist/sr-sprite dist/icons");
