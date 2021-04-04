@@ -1,11 +1,11 @@
 {
-  "name": "sr-sprite",
+  "name": "@superroute/sr-sprite",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "files": ["dist/"],
   "scripts": {
-    "build": "node ./src/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./src/build.js"
   },
   "author": "",
   "license": "ISC",
