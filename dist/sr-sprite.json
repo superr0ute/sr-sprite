@@ -125,6 +125,20 @@
     "x": 105,
     "y": 0
   },
+  "start-pin-15": {
+    "height": 15,
+    "pixelRatio": 1,
+    "width": 15,
+    "x": 105,
+    "y": 21
+  },
+  "stop-pin-15": {
+    "height": 15,
+    "pixelRatio": 1,
+    "width": 15,
+    "x": 120,
+    "y": 21
+  },
   "village-15": {
     "height": 21,
     "pixelRatio": 1,
