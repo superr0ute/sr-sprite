@@ -12,8 +12,8 @@ const defaultConfig = {
 };
 
 // make sure temp and out dirs exist
-fs.mkdirSync(`./dist/`, { recursive: true });
-fs.mkdirSync(`./tmp/`, { recursive: true });
+if (!fs.existsSync(`./dist/`)) fs.mkdirSync(`./dist/`, { recursive: true });
+if (!fs.existsSync(`./tmp/`)) fs.mkdirSync(`./tmp/`, { recursive: true });
 
 glob("./icons/*/*.svg", (err, files) => {
   const configIcons = Object.keys(icons);
@@ -21,7 +21,24 @@ glob("./icons/*/*.svg", (err, files) => {
     file.replace("./icons/", "").replace(".svg", "")
   );
 
-  for (iconId of allIconIds) {
+  // icons in custom/ folder just get copied without backgrounds/etc
+  const customIconIds = allIconIds.filter((iconId) =>
+    iconId.includes("custom/")
+  );
+
+  // all other folders get processed
+  for (iconId of customIconIds) {
+    fs.copyFileSync(
+      `./icons/${iconId}.svg`,
+      `./tmp/${iconId.split("/")[1]}.svg`
+    );
+  }
+
+  const editIconIds = allIconIds.filter(
+    (iconId) => !iconId.includes("custom/")
+  );
+
+  for (iconId of editIconIds) {
     const iconConfig = configIcons.includes(iconId)
       ? icons[iconId]
       : defaultConfig;
@@ -65,5 +82,7 @@ glob("./icons/*/*.svg", (err, files) => {
   }
 
   // pack it up with spritezero and delete temp files
-  exec("spritezero dist/sr-sprite ./tmp/ && spritezero --retina dist/sr-sprite@2x ./tmp && rm -rf ./tmp");
+  exec(
+    "spritezero dist/sr-sprite ./tmp/ && spritezero --retina dist/sr-sprite@2x ./tmp && rm -rf ./tmp"
+  );
 });
