@@ -1,9 +1,46 @@
 {
-  "maki/airport-15": {
-    "iconColor": "#000",
-    "borderSize": 1,
-    "borderColor": "#000",
+  "maki/shelter-15": {
+    "backgroundColor": "#4c2b20"
+  },
+  "temaki/cabin-15": {
+    "backgroundColor": "#4c2b20"
+  },
+  "valleyofdawn/cave-15": {
+    "backgroundColor": "#4c2b20"
+  },
+  "maki/star-15": {
     "backgroundColor": "#fff",
-    "padding": 2
+    "iconColor": "#000",
+    "borderColor": "#000"
+  },
+  "maki/convenience-15": {
+    "backgroundColor": "#8b4185"
+  },
+  "maki/grocery-15": {
+    "backgroundColor": "#8b4185"
+  },
+  "maki/campsite-15": {
+    "backgroundColor": "#018901"
+  },
+  "maki/water-15": {
+    "backgroundColor": "#1b32fd"
+  },
+  "maki/home-15": {
+    "backgroundColor": "#eb7300"
+  },
+  "maki/mountain-15": {
+    "backgroundColor": "#fff",
+    "borderColor": "#000",
+    "iconColor": "#018901"
+  },
+  "maki/heart-15": {
+    "backgroundColor": "#fff",
+    "borderColor": "#000",
+    "iconColor": "#ff0000"
+  },
+  "temaki/saddle-15": {
+    "backgroundColor": "#fff",
+    "borderColor": "#000",
+    "iconColor": "#4c2b20"
   }
 }
