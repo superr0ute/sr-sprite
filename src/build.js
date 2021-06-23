@@ -4,11 +4,11 @@ const glob = require("glob");
 const fs = require("fs");
 
 const defaultConfig = {
-  iconColor: "#000",
+  iconColor: "#fff",
   borderSize: 1,
-  borderColor: "#000",
-  backgroundColor: "#fff",
-  padding: 2,
+  borderColor: "#fff",
+  backgroundColor: "#000",
+  padding: 5,
 };
 
 // make sure temp and out dirs exist
@@ -40,7 +40,7 @@ glob("./icons/*/*.svg", (err, files) => {
 
   for (iconId of editIconIds) {
     const iconConfig = configIcons.includes(iconId)
-      ? icons[iconId]
+      ? Object.assign({}, defaultConfig, icons[iconId])
       : defaultConfig;
 
     const iconData = fs.readFileSync(`./icons/${iconId}.svg`, {
