@@ -1,163 +1,100 @@
 {
-  "airport-15": {
-    "height": 21,
+  "cabin-15": {
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
+    "width": 27,
     "x": 0,
-    "y": 0
-  },
-  "bus-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 21,
     "y": 0
   },
   "campsite-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 0,
-    "y": 21
-  },
-  "city-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 21,
-    "y": 21
-  },
-  "convenience-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 42,
+    "width": 27,
+    "x": 27,
     "y": 0
   },
-  "grocery-15": {
-    "height": 21,
+  "cave-15": {
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 63,
+    "width": 27,
+    "x": 0,
+    "y": 27
+  },
+  "convenience-15": {
+    "height": 27,
+    "pixelRatio": 1,
+    "width": 27,
+    "x": 27,
+    "y": 27
+  },
+  "grocery-15": {
+    "height": 27,
+    "pixelRatio": 1,
+    "width": 27,
+    "x": 54,
     "y": 0
   },
   "heart-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 42,
-    "y": 21
+    "width": 27,
+    "x": 81,
+    "y": 0
   },
   "home-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 63,
-    "y": 21
-  },
-  "laundry-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 0,
-    "y": 42
-  },
-  "lodging-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 21,
-    "y": 42
-  },
-  "marker-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 42,
-    "y": 42
-  },
-  "marker-stroked-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 63,
-    "y": 42
+    "width": 27,
+    "x": 54,
+    "y": 27
   },
   "mountain-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 0,
-    "y": 63
+    "width": 27,
+    "x": 81,
+    "y": 27
   },
-  "parking-15": {
-    "height": 21,
+  "saddle-15": {
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 21,
-    "y": 63
+    "width": 27,
+    "x": 0,
+    "y": 54
   },
   "shelter-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 42,
-    "y": 63
-  },
-  "shop-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 63,
-    "y": 63
+    "width": 27,
+    "x": 27,
+    "y": 54
   },
   "star-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 84,
-    "y": 0
-  },
-  "star-stroked-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 105,
-    "y": 0
+    "width": 27,
+    "x": 54,
+    "y": 54
   },
   "start-pin-15": {
     "height": 15,
     "pixelRatio": 1,
     "width": 15,
-    "x": 105,
-    "y": 21
+    "x": 0,
+    "y": 81
   },
   "stop-pin-15": {
     "height": 15,
     "pixelRatio": 1,
     "width": 15,
-    "x": 120,
-    "y": 21
-  },
-  "village-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 126,
-    "y": 0
-  },
-  "volcano-15": {
-    "height": 21,
-    "pixelRatio": 1,
-    "width": 21,
-    "x": 147,
-    "y": 0
+    "x": 15,
+    "y": 81
   },
   "water-15": {
-    "height": 21,
+    "height": 27,
     "pixelRatio": 1,
-    "width": 21,
-    "x": 84,
-    "y": 21
+    "width": 27,
+    "x": 81,
+    "y": 54
   }
 }
