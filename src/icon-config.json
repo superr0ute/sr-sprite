@@ -1,12 +1,12 @@
 {
   "maki/shelter-15": {
-    "backgroundColor": "#4c2b20"
+    "backgroundColor": "#7a5446"
   },
   "temaki/cabin-15": {
-    "backgroundColor": "#4c2b20"
+    "backgroundColor": "#7a5446"
   },
   "valleyofdawn/cave-15": {
-    "backgroundColor": "#4c2b20"
+    "backgroundColor": "#7a5446"
   },
   "maki/star-15": {
     "backgroundColor": "#fff",
@@ -14,21 +14,29 @@
     "borderColor": "#000"
   },
   "maki/convenience-15": {
-    "backgroundColor": "#8b4185"
+    "backgroundColor": "#9d22b2"
   },
   "maki/grocery-15": {
-    "backgroundColor": "#8b4185"
+    "backgroundColor": "#9d22b2"
   },
   "maki/campsite-15": {
-    "backgroundColor": "#018901"
+    "backgroundColor": "#358f39"
   },
   "maki/water-15": {
-    "backgroundColor": "#1b32fd"
+    "backgroundColor": "#006ec8"
   },
   "maki/home-15": {
-    "backgroundColor": "#eb7300"
+    "backgroundColor": "#ffa100"
+  },
+  "maki/drinking-water-15": {
+    "backgroundColor": "#006ec8"
   },
   "maki/mountain-15": {
+    "backgroundColor": "#fff",
+    "borderColor": "#000",
+    "iconColor": "#018901"
+  },
+  "maki/volcano-15": {
     "backgroundColor": "#fff",
     "borderColor": "#000",
     "iconColor": "#018901"
@@ -39,8 +47,6 @@
     "iconColor": "#ff0000"
   },
   "temaki/saddle-15": {
-    "backgroundColor": "#fff",
-    "borderColor": "#000",
-    "iconColor": "#4c2b20"
+    "backgroundColor": "#ff3f83"
   }
 }

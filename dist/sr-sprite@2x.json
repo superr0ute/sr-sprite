@@ -27,74 +27,88 @@
     "x": 54,
     "y": 54
   },
-  "grocery-15": {
+  "drinking-water-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
     "x": 108,
+    "y": 0
+  },
+  "grocery-15": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 54,
+    "x": 162,
     "y": 0
   },
   "heart-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
-    "x": 162,
-    "y": 0
+    "x": 108,
+    "y": 54
   },
   "home-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
-    "x": 108,
+    "x": 162,
     "y": 54
   },
   "mountain-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
-    "x": 162,
-    "y": 54
-  },
-  "saddle-15": {
-    "height": 54,
-    "pixelRatio": 2,
-    "width": 54,
     "x": 0,
     "y": 108
   },
-  "shelter-15": {
+  "saddle-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
     "x": 54,
     "y": 108
   },
-  "star-15": {
+  "shelter-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
     "x": 108,
     "y": 108
   },
+  "star-15": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 54,
+    "x": 162,
+    "y": 108
+  },
   "start-pin-15": {
     "height": 30,
     "pixelRatio": 2,
     "width": 30,
-    "x": 0,
+    "x": 108,
     "y": 162
   },
   "stop-pin-15": {
     "height": 30,
     "pixelRatio": 2,
     "width": 30,
-    "x": 30,
+    "x": 138,
+    "y": 162
+  },
+  "volcano-15": {
+    "height": 54,
+    "pixelRatio": 2,
+    "width": 54,
+    "x": 0,
     "y": 162
   },
   "water-15": {
     "height": 54,
     "pixelRatio": 2,
     "width": 54,
-    "x": 162,
-    "y": 108
+    "x": 54,
+    "y": 162
   }
 }
